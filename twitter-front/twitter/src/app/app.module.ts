@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './account/login/login.component';
+import { CreateUserComponent } from './account/create-user/create-user.component';
+import { FeedComponent } from './components/feed/feed.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    CreateUserComponent,
+    FeedComponent
   ],
   imports: [
     BrowserModule,
