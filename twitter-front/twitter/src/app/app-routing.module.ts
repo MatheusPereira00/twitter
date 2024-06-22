@@ -6,7 +6,7 @@ import { FeedComponent } from './components/feed/feed.component';
 
 const routes: Routes = [
   {
-    path: 'auth', component: LoginComponent
+    path: '', component: LoginComponent
   },
   {
     path: 'register', component: CreateUserComponent
