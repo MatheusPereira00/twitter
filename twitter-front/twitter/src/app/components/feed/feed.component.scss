@@ -36,11 +36,6 @@ header {
   border-radius: 5px;
 }
 
-/* Timeline */
-.timeline {
-  padding: 20px;
-}
-
 .tweet {
   border: 1px solid #ccc;
   padding: 15px;
@@ -84,9 +79,16 @@ header {
 
 .new-tweet button {
   padding: 10px 20px;
-  background-color: #008CBA;
+  background-color: #008cba;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#tweet-list {
+  list-style-type: none;
+  padding: 1;
+  border: 1px solid #ccc;
+  border-radius: 7px;
 }

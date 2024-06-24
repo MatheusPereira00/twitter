@@ -7,6 +7,8 @@ import { LoginComponent } from './account/login/login.component';
 import { CreateUserComponent } from './account/create-user/create-user.component';
 import { FeedComponent } from './components/feed/feed.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { FeedComponent } from './components/feed/feed.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

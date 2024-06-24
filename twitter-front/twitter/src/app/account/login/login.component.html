@@ -1,19 +1,37 @@
 <div class="container">
   <header>
     <div class="logo">
-      <img src="/assets/twitter-113.png" alt="Twitter">
+      <img src="/assets/twitter-113.png" alt="Twitter" />
     </div>
   </header>
   <main>
     <div class="login-form">
       <h2>Entrar</h2>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Digite seu email">
+      <form (ngSubmit)="onSubmit()">
+        <label for="username">Email:</label>
+        <input
+          type="email"
+          id="username"
+          name="username"
+          placeholder="Digite seu email"
+          [(ngModel)]="username"
+          required
+        />
+
         <label for="password">Senha:</label>
-        <input type="password" id="password" placeholder="Digite sua senha">
-        <button type="submit" routerLink="/feed">Entrar</button>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Digite sua senha"
+          [(ngModel)]="password"
+          required
+        />
+
+        <button type="submit" [disabled]="isSubmitDisabled()">Entrar</button>
         <a href="cadastro.html" routerLink="/register">Criar conta</a>
+
+        <p *ngIf="loginError" class="error-message">{{ loginError }}</p>
       </form>
     </div>
   </main>
